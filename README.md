@@ -22,8 +22,7 @@ You can download modifyed plugin using --
 cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git
 
 
-Take a look --
-
+# Take a look --
         var imageURL = ['a.jpg','b.jpg','c.jpg','d.jpg','e.jpg'];
 
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
