@@ -18,5 +18,4 @@
 -->
 
 # org.apache.cordova.file
-
-Plugin documentation: [doc/index.md](doc/index.md)
+You can download modifyed plugin uisng -- https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git
