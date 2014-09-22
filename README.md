@@ -18,12 +18,15 @@
 -->
 
 # Modifyed org.apache.cordova.file
-
-**You can download modifyed plugin using -- **
+---------------
+**You can download modifyed plugin using --**
+---------------
 cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git
 
 **If you are using file plugin you need to install org.apache.cordova.file-transfer plugin. With out file transfer plugin it will not work.**
+---------------
 **Take a look --**
+---------------
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
             fileSystem.root.getFile("readme.txt", {
                 create: true,
@@ -37,6 +40,7 @@ cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-c
         }, null);
 
 **For Displaying image in view-**
+---------------
 ```html
 <img src="../tree.jpg" width='100%'>
 ```
