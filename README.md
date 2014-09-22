@@ -37,4 +37,4 @@ cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-c
         }, null);
 
 # For Displaying image in view-
-<img src="../tree.jpg" width='100%'>
+```html<img src="../tree.jpg" width='100%'>```
