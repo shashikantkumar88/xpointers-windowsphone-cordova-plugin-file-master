@@ -21,21 +21,20 @@
 You can download modifyed plugin using -- 
 cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git
 
+# If you are using file plugin you need to install org.apache.cordova.file-transfer plugin. With out file transfer plugin it will not work.
 
 # Take a look --
-        var imageURL = ['a.jpg','b.jpg','c.jpg','d.jpg','e.jpg'];
-
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
             fileSystem.root.getFile("readme.txt", {
                 create: true,
                 exclusive: false
             }, function(fileEntry) {
                 fileEntry.createWriter(function(writer) {
-                    for (var i = 0; i < imageURL.length; i++) {
-                        var imageName = imageURL[i];
-                        //saving image from server to windows phone isolated storage
-                        writer.saveImageIsolated('http://pah.stratawizdev.com/PHNewsImages/' + imageURL[i]);
-                    }
+                   //saving image from server to windows phone isolated storage
+                   writer.saveImageIsolated('http://pah.stratawizdev.com/PHNewsImages/tree.jpg');
                 }, null);
             }, null);
         }, null);
+
+# For Displaying image in view-
+<img src="../tree.jpg" width='100%'>
