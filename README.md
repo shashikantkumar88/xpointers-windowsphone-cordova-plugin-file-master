@@ -20,3 +20,23 @@
 # org.apache.cordova.file
 You can download modifyed plugin using -- 
 cordova plugin add https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git
+
+
+Take a look --
+
+        var imageURL = ['a.jpg','b.jpg','c.jpg','d.jpg','e.jpg'];
+
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+            fileSystem.root.getFile("readme.txt", {
+                create: true,
+                exclusive: false
+            }, function(fileEntry) {
+                fileEntry.createWriter(function(writer) {
+                    for (var i = 0; i < imageURL.length; i++) {
+                        var imageName = imageURL[i];
+                        //saving image from server to windows phone isolated storage
+                        writer.saveImageIsolated('http://pah.stratawizdev.com/PHNewsImages/' + imageURL[i]);
+                    }
+                }, null);
+            }, null);
+        }, null);
