@@ -4,7 +4,7 @@
     "cordova_name": "File",
     "description": "Cordova File Plugin",
     "license": "Apache 2.0",
-    "repo": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-file.git",
+    "repo": "https://github.com/shashikantkumar88/xpointers-windowsphone-cordova-plugin-file-master.git",
     "issue": "https://issues.apache.org/jira/browse/CB/component/12320651",
     "keywords": [
         "cordova",
